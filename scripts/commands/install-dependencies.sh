@@ -67,8 +67,9 @@ main () {
         [[ "${TADS_VERBOSE:-}" == true ]] &&  set -x
         sudo apt-get update \
         && sudo apt-get --yes install software-properties-common \
-        && sudo apt-add-repository --yes --update ppa:ansible/ansible \
-        && sudo apt-get --yes install ansible
+       # && sudo apt-add-repository --yes --update ppa:ansible/ansible \
+       # && sudo apt-get --yes install ansible
+       && pip3 install ansible
         set +x
     else
         echo "Ansible is already installed. Skipping"
