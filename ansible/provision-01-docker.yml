@@ -2,7 +2,7 @@
 ###
 # provision-01-docker playbook
 ##
-# Install Docker, Python, pip and pip packages required by Ansible
+# Install Docker, python3, pip and pip packages required by Ansible
 ##
 
 - hosts: docker

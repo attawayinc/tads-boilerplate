@@ -190,6 +190,6 @@ locals {
 set -e
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install -y python-pip
+sudo apt-get install -y python3-pip
 	EOF
 }

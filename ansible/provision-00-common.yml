@@ -31,10 +31,10 @@
 # All environments except localhost
 - hosts: docker:!localhost:!test
   tasks:
-    - name: Set timezone to Etc/UTC
+    - name: Set timezone to Etc/CST
       become: True
       timezone:
-        name: Etc/UTC
+        name: Etc/CST
 
     - name: Add SSH authorized_keys
       become: True
